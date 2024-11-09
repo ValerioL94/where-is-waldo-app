@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const Timer = () => {
+const TimerComponent = () => {
   const [time, setTime] = useState(0);
   const [isRunning, setIsRunning] = useState(true);
   const seconds = Math.floor((time % 6000) / 100);
@@ -25,4 +25,4 @@ const Timer = () => {
   );
 };
 
-export default Timer;
+export default TimerComponent;
