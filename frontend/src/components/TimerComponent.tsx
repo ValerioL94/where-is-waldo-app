@@ -16,7 +16,7 @@ const TimerComponent = () => {
     return () => clearInterval(intervalId);
   }, [isRunning, time]);
   return (
-    <div className='text-xl border-2 p-4 rounded-md border-indigo-900'>
+    <div className='text-lg border-2 p-2 rounded-md border-indigo-900'>
       <strong>
         Time: {seconds.toString().padStart(2, '0')}:
         {milliseconds.toString().padStart(2, '0')}

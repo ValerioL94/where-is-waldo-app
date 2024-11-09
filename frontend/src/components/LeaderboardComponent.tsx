@@ -8,20 +8,23 @@ const LeaderboardComponent = ({
 }) => {
   return (
     <div className='flex flex-col items-center justify-center m-4 gap-4'>
-      <h1 className='mb-2 font-bold text-xl'>LEADERBOARD </h1>
+      <h2 className='p-2 font-bold text-xl'>Leaderboard</h2>
       <div className='flex gap-4 flex-wrap justify-center'>
-        {gameMaps.map((gameMap) => (
-          <div className='border-indigo-900 border-2 min-w-60 rounded-lg'>
-            <h1 className='border-indigo-900 border-b-2 p-2 text-lg font-bold text-indigo-700 text-center'>
-              {gameMap.name} map
+        {gameMaps.map((gameMap, index) => (
+          <div
+            key={index}
+            className='border-indigo-900 border-2 min-w-60 rounded-lg'
+          >
+            <h1 className='border-indigo-900 border-b-2 p-2 text-lg font-bold text-indigo-900 text-center'>
+              {gameMap.name}
             </h1>
             {!gameMap.scoreboard.length && (
               <p className='text-center p-4'>No scores yet.</p>
             )}
             {gameMap.scoreboard && (
               <ol className='list-decimal list-inside'>
-                {gameMap.scoreboard.map((player) => (
-                  <li className='p-2 border-b-2 m-2'>
+                {gameMap.scoreboard.map((player, index) => (
+                  <li key={index} className='p-2 border-b-2 m-2'>
                     {player.name} - {player.score}
                   </li>
                 ))}

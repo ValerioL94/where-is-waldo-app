@@ -27,7 +27,7 @@ const ModalPromptComponent = ({
   }
   return (
     <div
-      className='flex flex-col gap-2 items-center justify-center absolute min-w-28 h-40  bg-slate-400 border-indigo-900 border-2 rounded-md p-1 pt-4'
+      className='flex flex-col gap-2 items-center justify-center absolute min-w-28 h-40  bg-indigo-400 border-indigo-900 border-2 rounded-md p-2 w-32'
       style={{
         left: x > window.innerWidth / 2 ? x - 150 : x + 25,
         top: y - 25,
@@ -44,7 +44,7 @@ const ModalPromptComponent = ({
           !character.found && (
             <button
               key={character.id}
-              className='w-full border-slate-300 border-2 rounded-md hover:bg-slate-300 p-1 font-bold'
+              className='w-24 border-indigo-900 border-2 rounded-md hover:bg-indigo-900 hover:text-white p-1 font-bold'
               onClick={() => handleConfirm(character.id)}
             >
               {character.name}
