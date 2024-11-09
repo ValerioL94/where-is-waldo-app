@@ -40,27 +40,25 @@ const GameComponent = ({
           />
         )}
       </div>
-      <div className='p-4 relative'>
-        <div className='sticky top-4'>
-          <div className='flex flex-col md:flex-row lg:flex-col items-center w-full gap-4'>
-            <TimerComponent />
-            {characters.map((character) => (
-              <div key={character.id} className='text-center'>
-                <span>
-                  <strong>{character.name}</strong>
-                </span>
-                <img
-                  src={character.icon.src}
-                  alt={character.icon.alt}
-                  className={
-                    character.found
-                      ? 'max-h-36 w-24 border-4 rounded-md border-green-500'
-                      : 'max-h-36 max-w-24 border-4 rounded-md border-red-500'
-                  }
-                />
-              </div>
-            ))}
-          </div>
+      <div className='relative p-4'>
+        <div className='flex flex-col sticky top-4 md:flex-row lg:flex-col items-center w-full gap-4'>
+          <TimerComponent />
+          {characters.map((character) => (
+            <div key={character.id} className='text-center'>
+              <span>
+                <strong>{character.name}</strong>
+              </span>
+              <img
+                src={character.icon.src}
+                alt={character.icon.alt}
+                className={
+                  character.found
+                    ? 'max-h-36 w-24 border-4 rounded-md border-green-500'
+                    : 'max-h-36 max-w-24 border-4 rounded-md border-red-500'
+                }
+              />
+            </div>
+          ))}
         </div>
       </div>
     </div>
