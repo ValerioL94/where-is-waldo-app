@@ -1,4 +1,4 @@
-import { GameMap, Player } from './components/types';
+import { GameMap, Player } from './types';
 
 export const scoreboard1: Player[] = [
   { name: 'John', score: '05:20' },

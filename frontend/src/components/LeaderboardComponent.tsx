@@ -1,5 +1,5 @@
 import { gameMaps } from '../db';
-import { Stage } from './types';
+import { Stage } from '../types';
 
 const LeaderboardComponent = ({
   setStage,

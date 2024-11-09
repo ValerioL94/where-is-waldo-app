@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Character, GameMap, Stage } from './types';
+import { Character, GameMap, Stage } from '../types';
 import ModalPromptComponent from './ModalPromptComponent';
 import TimerComponent from './TimerComponent';
 

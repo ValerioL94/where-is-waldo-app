@@ -1,4 +1,4 @@
-import { GameMap, Stage } from './types';
+import { GameMap, Stage } from '../types';
 import { gameMaps } from '../db';
 
 const MapSelectionComponent = ({

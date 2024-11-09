@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { GameMap, Stage } from './types';
+import { GameMap, Stage } from '../types';
 import MapSelectionComponent from './MapSelectionComponent';
 import LeaderboardComponent from './LeaderboardComponent';
 import GameComponent from './GameComponent';
