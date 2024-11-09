@@ -20,6 +20,7 @@ export interface GameMap {
     src: string;
     alt: string;
   };
+  difficulty: string;
   characters: Character[];
   scoreboard: Player[];
 }
